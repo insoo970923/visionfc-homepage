@@ -565,10 +565,11 @@
     <div class="logo-icon" id="logoIcon"><img src="logo.png" alt="VISION FC"></div>
   </a>
   <ul class="nav-menu">
-    <li><a id="nav-features" onclick="showPage('features')">주요 기능</a></li>
-    <li><a id="nav-how"      onclick="showPage('how')">이용 방법</a></li>
-    <li><a id="nav-plan"     onclick="showPage('plan')">요금제</a></li>
-    <li><a id="nav-clients"  onclick="showPage('clients')">고객사</a></li>
+    <li><a id="nav-features"   onclick="showPage('features')">주요 기능</a></li>
+    <li><a id="nav-how"        onclick="showPage('how')">이용 방법</a></li>
+    <li><a id="nav-plan"       onclick="showPage('plan')">요금제</a></li>
+    <li><a id="nav-clients"    onclick="showPage('clients')">고객사</a></li>
+    <li><a id="nav-consulting" onclick="showPage('consulting')">컨설팅</a></li>
   </ul>
   <button class="nav-cta" onclick="openContact()">무료 체험 신청</button>
   <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
@@ -580,6 +581,7 @@
   <a onclick="showPage('how');closeMenu()">이용 방법</a>
   <a onclick="showPage('plan');closeMenu()">요금제</a>
   <a onclick="showPage('clients');closeMenu()">고객사</a>
+  <a onclick="showPage('consulting');closeMenu()">컨설팅</a>
   <button class="m-cta" onclick="closeMenu();openContact()">✏️ 무료 체험 신청</button>
 </div>
 
@@ -1124,6 +1126,155 @@
   </footer>
 </div>
 
+<!-- ════════════════════════════════
+     컨설팅
+════════════════════════════════ -->
+<div class="page" id="consulting">
+  <div class="detail-hero">
+    <div class="sec-label">CONSULTING</div>
+    <h1>HACCP 컨설팅</h1>
+    <p>인증 취득부터 현장 지도, 교육까지<br/>VISION FC가 처음부터 끝까지 함께합니다.</p>
+  </div>
+
+  <!-- 컨설팅 서비스 4가지 -->
+  <div class="detail-body">
+
+    <!-- 서비스 카드 그리드 -->
+    <div class="sec-head reveal" style="margin-bottom:48px;">
+      <div class="sec-label">OUR SERVICES</div>
+      <h2 class="sec-title">4가지 핵심 컨설팅 서비스</h2>
+      <p class="sec-sub">식품 안전 분야 전문 컨설턴트가 업체 규모와 현황에 맞는 맞춤형 서비스를 제공합니다.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-bottom:80px;">
+
+      <!-- 1. HACCP 인증 컨설팅 -->
+      <div class="reveal" style="background:#fff;border:2px solid var(--gray2);border-radius:24px;padding:36px 28px;transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;" onmouseenter="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(13,27,42,0.14)';this.style.borderColor='var(--gold)';" onmouseleave="this.style.transform='';this.style.boxShadow='';this.style.borderColor='var(--gray2)';">
+        <div style="width:56px;height:56px;background:rgba(244,166,29,0.12);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px;">🏆</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:1.5px;margin-bottom:10px;">HACCP CERTIFICATION</div>
+        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;letter-spacing:-0.5px;">HACCP 인증 컨설팅</h3>
+        <p style="font-size:14px;color:var(--gray3);line-height:1.8;margin-bottom:20px;">신규 HACCP 인증 취득부터 사후관리, 갱신까지 전 과정을 전문 컨설턴트가 직접 지원합니다. 위해요소분석, CCP 결정, 관리계획서 작성을 함께 진행합니다.</p>
+        <ul style="list-style:none;font-size:13px;color:var(--dark);">
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 신규 HACCP 인증 취득 지원</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 위해요소분석(HA) 및 CCP 결정</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> HACCP 관리계획서 작성</li>
+          <li style="padding:8px 0;display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 인증 갱신 및 사후관리 지원</li>
+        </ul>
+      </div>
+
+      <!-- 2. HACCP 교육/훈련 -->
+      <div class="reveal" style="transition-delay:0.07s;background:#fff;border:2px solid var(--gray2);border-radius:24px;padding:36px 28px;transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;" onmouseenter="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(13,27,42,0.14)';this.style.borderColor='var(--gold)';" onmouseleave="this.style.transform='';this.style.boxShadow='';this.style.borderColor='var(--gray2)';">
+        <div style="width:56px;height:56px;background:rgba(244,166,29,0.12);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px;">📚</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:1.5px;margin-bottom:10px;">EDUCATION & TRAINING</div>
+        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;letter-spacing:-0.5px;">HACCP 교육·훈련</h3>
+        <p style="font-size:14px;color:var(--gray3);line-height:1.8;margin-bottom:20px;">법정 위생교육부터 HACCP 이해교육, 담당자 실무교육까지 체계적인 교육 프로그램을 제공합니다. 현장 맞춤형 교육으로 직원의 이해도를 높입니다.</p>
+        <ul style="list-style:none;font-size:13px;color:var(--dark);">
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 법정 위생교육 대행</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> HACCP 이해 및 실무 교육</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 담당자 역할별 맞춤 교육</li>
+          <li style="padding:8px 0;display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 교육 수료증 발급 지원</li>
+        </ul>
+      </div>
+
+      <!-- 3. 현장 방문 지도 -->
+      <div class="reveal" style="transition-delay:0.14s;background:#fff;border:2px solid var(--gray2);border-radius:24px;padding:36px 28px;transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;" onmouseenter="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(13,27,42,0.14)';this.style.borderColor='var(--gold)';" onmouseleave="this.style.transform='';this.style.boxShadow='';this.style.borderColor='var(--gray2)';">
+        <div style="width:56px;height:56px;background:rgba(244,166,29,0.12);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px;">🔍</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:1.5px;margin-bottom:10px;">ON-SITE GUIDANCE</div>
+        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;letter-spacing:-0.5px;">현장 방문 지도</h3>
+        <p style="font-size:14px;color:var(--gray3);line-height:1.8;margin-bottom:20px;">전문 컨설턴트가 업체를 직접 방문하여 현장 위생 상태를 점검하고, 개선사항을 즉시 지도합니다. HACCP 심사 전 모의심사도 제공합니다.</p>
+        <ul style="list-style:none;font-size:13px;color:var(--dark);">
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 정기 현장 위생 점검</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 개선사항 도출 및 지도</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--gray2);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> HACCP 심사 전 모의 심사</li>
+          <li style="padding:8px 0;display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 점검 결과보고서 제공</li>
+        </ul>
+      </div>
+
+      <!-- 4. SmartHACCP 도입 지원 -->
+      <div class="reveal" style="transition-delay:0.21s;background:linear-gradient(135deg,var(--navy),#0d1f35);border:2px solid var(--gold);border-radius:24px;padding:36px 28px;position:relative;transition:transform 0.25s,box-shadow 0.25s;" onmouseenter="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(244,166,29,0.25)';" onmouseleave="this.style.transform='';this.style.boxShadow='';">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:4px 18px;border-radius:20px;white-space:nowrap;">SmartHACCP 연동</div>
+        <div style="width:56px;height:56px;background:rgba(244,166,29,0.2);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px;">💻</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1.5px;margin-bottom:10px;">SYSTEM IMPLEMENTATION</div>
+        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;letter-spacing:-0.5px;color:#fff;">SmartHACCP 도입 지원</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.8;margin-bottom:20px;">컨설팅과 SmartHACCP 시스템을 함께 도입하면 더 체계적입니다. 초기 설정부터 일지 작성 교육, 전자결재 설정까지 전담 지원합니다.</p>
+        <ul style="list-style:none;font-size:13px;color:rgba(255,255,255,0.85);">
+          <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 업체 정보 초기 등록 대행</li>
+          <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 전자결재 라인 설정 지원</li>
+          <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 일지 작성 현장 교육</li>
+          <li style="padding:8px 0;display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;">✓</span> 컨설팅 + 시스템 패키지 할인</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 컨설팅 프로세스 -->
+    <div class="sec-pad gray" style="margin:0 -5%;padding:72px 5%;border-radius:24px;">
+      <div class="sec-head reveal" style="margin-bottom:48px;">
+        <div class="sec-label">PROCESS</div>
+        <h2 class="sec-title">컨설팅 진행 절차</h2>
+      </div>
+      <div style="display:flex;gap:0;flex-wrap:wrap;justify-content:center;">
+        <div class="reveal" style="flex:1;min-width:160px;text-align:center;padding:0 16px;position:relative;">
+          <div style="width:56px;height:56px;background:var(--navy);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:18px;font-weight:900;color:var(--gold);">01</div>
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:8px;">초기 상담</h4>
+          <p style="font-size:13px;color:var(--gray3);line-height:1.7;">업체 현황 파악 및<br/>컨설팅 방향 설정</p>
+        </div>
+        <div style="display:flex;align-items:center;padding-bottom:48px;color:var(--gold);font-size:20px;font-weight:700;">→</div>
+        <div class="reveal" style="transition-delay:0.08s;flex:1;min-width:160px;text-align:center;padding:0 16px;">
+          <div style="width:56px;height:56px;background:var(--navy);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:18px;font-weight:900;color:var(--gold);">02</div>
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:8px;">현장 진단</h4>
+          <p style="font-size:13px;color:var(--gray3);line-height:1.7;">현장 방문 후<br/>위생·서류 점검</p>
+        </div>
+        <div style="display:flex;align-items:center;padding-bottom:48px;color:var(--gold);font-size:20px;font-weight:700;">→</div>
+        <div class="reveal" style="transition-delay:0.16s;flex:1;min-width:160px;text-align:center;padding:0 16px;">
+          <div style="width:56px;height:56px;background:var(--navy);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:18px;font-weight:900;color:var(--gold);">03</div>
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:8px;">계획 수립</h4>
+          <p style="font-size:13px;color:var(--gray3);line-height:1.7;">개선 계획 및<br/>일정 수립</p>
+        </div>
+        <div style="display:flex;align-items:center;padding-bottom:48px;color:var(--gold);font-size:20px;font-weight:700;">→</div>
+        <div class="reveal" style="transition-delay:0.24s;flex:1;min-width:160px;text-align:center;padding:0 16px;">
+          <div style="width:56px;height:56px;background:var(--navy);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:18px;font-weight:900;color:var(--gold);">04</div>
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:8px;">지도·교육</h4>
+          <p style="font-size:13px;color:var(--gray3);line-height:1.7;">현장 지도 및<br/>직원 교육 실시</p>
+        </div>
+        <div style="display:flex;align-items:center;padding-bottom:48px;color:var(--gold);font-size:20px;font-weight:700;">→</div>
+        <div class="reveal" style="transition-delay:0.32s;flex:1;min-width:160px;text-align:center;padding:0 16px;">
+          <div style="width:56px;height:56px;background:var(--gold);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:18px;font-weight:900;color:var(--navy);">05</div>
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:8px;">인증 취득</h4>
+          <p style="font-size:13px;color:var(--gray3);line-height:1.7;">HACCP 심사 동행<br/>및 인증 완료</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="sec-pad" style="text-align:center;background:linear-gradient(135deg,var(--navy),#0d1f35);">
+    <h2 class="reveal" style="color:#fff;font-size:clamp(22px,3vw,32px);font-weight:900;margin-bottom:14px;">HACCP, 혼자 고민하지 마세요</h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.6);margin-bottom:32px;font-size:16px;">전문 컨설턴트가 처음부터 끝까지 함께합니다.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <button class="btn-gold" onclick="openContact()">무료 상담 신청</button>
+      <a href="tel:010-3191-0575" class="btn-ghost" style="padding:14px 32px;border-radius:30px;font-size:15px;font-weight:600;border:1.5px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">📞 010-3191-0575</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo"><img src="logo.png" alt="VISION FC" style="height:36px;width:auto;background:#fff;border-radius:6px;padding:3px;"></div>
+        <div class="footer-info">VISION FC | Tel : 010-3191-0575</div>
+      </div>
+      <div class="footer-links">
+        <a onclick="showPage('home')">홈</a>
+        <a onclick="showPage('features')">주요 기능</a>
+        <a onclick="showPage('plan')">요금제</a>
+        <a onclick="openContact()">문의하기</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 VISION FC. All rights reserved.</div>
+  </footer>
+</div>
+
 <!-- FLOATING BTN -->
 <button class="float-btn" onclick="openContact()">✏️ 무료 체험 신청</button>
 
@@ -1183,7 +1334,7 @@
     window.scrollTo({ top: 0, behavior: 'instant' });
 
     // 네비 active 표시
-    ['features','how','plan','clients'].forEach(n => {
+    ['features','how','plan','clients','consulting'].forEach(n => {
       const el = document.getElementById('nav-' + n);
       if (el) el.classList.remove('active');
     });
